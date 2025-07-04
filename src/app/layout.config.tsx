@@ -19,15 +19,8 @@ export const baseOptions: BaseLayoutProps = {
         >
           <circle cx={12} cy={12} r={12} fill="currentColor" />
         </svg>
-        Dev&apos;s Docs
+        Dev&apos;s Portfolio
       </>
     ),
   },
-  links: [
-    {
-      text: 'Documentation',
-      url: '/docs',
-      active: 'nested-url',
-    },
-  ],
 };
