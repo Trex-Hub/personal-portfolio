@@ -8,6 +8,7 @@ import { Safari } from "@/components/molecules/safari";
 import { Device } from "@/components/organisms/device";
 import { Iphone15Pro } from "@/components/molecules/iphone";
 import ProjectCard from "@/components/molecules/project-card";
+import Timeline from "@/components/molecules/timeline";
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
@@ -19,5 +20,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     Iphone15Pro: (props) => <Iphone15Pro {...(props as any)} />,
     Device: (props) => <Device {...(props as any)} />,
     ProjectCard: (props) => <ProjectCard {...(props as any)} />,
+    Timeline: (props) => <Timeline {...(props as any)} />,
   };
 }
