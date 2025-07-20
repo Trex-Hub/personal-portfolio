@@ -1,0 +1,57 @@
+---
+title: FaceBits
+description: A face registration and recognition API I built.
+---
+
+<Device
+  mobile={{
+    src: "/facebits-banner-mobile.png",
+    className: "w-full h-fit",
+  }}
+  desktop={{
+    url: "https://facebits.io",
+    imageSrc: "/facebits-banner-pc.png",
+    className: "w-full h-max",
+  }}
+/>
+
+## About the Project
+
+FaceBits began as a simple API‑based face registration and recognition service I built to streamline biometric workflows in my applications.
+
+- I built endpoints to **register faces** and **manage users**.
+- I used a **pretrained model** for recognition allowing anyone to get started without configuration.
+- Integration is done purely via APIs, but I’ve built a **minimal SDK foundation** and plan to release a React‑focused package soon.
+
+---
+
+## My Roadmap
+
+| Aspect                | Current                   | Next Steps                                                                |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------- |
+| **Recognition Model** | Pretrained, cost‑free use | Custom ML models for paid users                                           |
+| **Dashboard**         | Face and user management  | Add billing, usage insights                                               |
+| **API Keys**          | Issue and revoke keys     | Add scoped access & usage limits                                          |
+| **SDK**               | None Right Now            | Full React SDK and support libraries                                      |
+| **Webhooks**          | Basic WebHook Support     | Ability to pass custom payloads and configure it according to your system |
+
+---
+
+## How I Use It
+
+- Generate an **API key** to authenticate your calls.
+- Use `POST /register` to add new faces.
+- Use `POST /recognize`, and the pretrained model returns matching IDs and confidence scores.
+- Can be embeded using iframes or custom forms to call facebits api and webhooks to manage your own database
+
+---
+
+## Why I Built It
+
+I wanted a flexible, developer‑friendly way to manage facial data without dealing with UI-heavy platforms or proprietary constraints. FaceBits reflects my interest in **clean APIs**, **scalable architecture**, and **clear expansion paths** for users and myself.
+
+---
+
+## Note
+
+The project is currently hosted entirely on free tiers of hosting platforms and backend services. If you'd like to learn more or try it out, feel free to drop me a message, I'd be happy to connect and walk you through a demo!
