@@ -123,7 +123,7 @@ export default function Timeline({
         <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
 
         <div className="space-y-8">
-          {items.map((item, index) => {
+          {items.map((item) => {
             const config = getStatusConfig(item.status);
             const Icon = config.icon;
 
