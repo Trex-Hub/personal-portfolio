@@ -22,10 +22,24 @@ export interface DeviceProps extends SVGProps<SVGSVGElement> {
     height?: number;
     mode?: SafariMode;
   };
+  onlyDesktop?: boolean;
+  onlyMobile?: boolean;
 }
 
-export function Device({ mobile, desktop }: DeviceProps) {
+export function Device({
+  mobile,
+  desktop,
+  onlyDesktop,
+  onlyMobile,
+}: DeviceProps) {
   const isMobile = useIsMobile();
+
+  if (onlyDesktop) {
+    return <Safari {...desktop} />;
+  }
+  if (onlyMobile) {
+    return <Iphone15Pro {...mobile} />;
+  }
 
   return isMobile ? <Iphone15Pro {...mobile} /> : <Safari {...desktop} />;
 }
