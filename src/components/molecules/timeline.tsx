@@ -118,8 +118,8 @@ export default function Timeline({ items, showLegend = false }: TimelineProps) {
         {/* Timeline line */}
         <div className='absolute left-6 top-0 bottom-0 w-px bg-border' />
 
-        <div className="space-y-8">
-          {items.map((item) => {
+        <div className='space-y-8'>
+          {items.map(item => {
             const config = getStatusConfig(item.status);
             const Icon = config.icon;
 
