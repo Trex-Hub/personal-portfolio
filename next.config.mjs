@@ -9,8 +9,8 @@ const config = {
   images: {
     remotePatterns: [
       {
-        hostname: 'placehold.co'
-      }
+        hostname: 'placehold.co',
+      },
     ],
   },
 };

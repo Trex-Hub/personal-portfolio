@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { Iphone15Pro } from "@/components/molecules/iphone";
-import { Safari } from "@/components/molecules/safari";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { SVGProps } from "react";
+import { Iphone15Pro } from '@/components/molecules/iphone';
+import { Safari } from '@/components/molecules/safari';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { SVGProps } from 'react';
 
-type SafariMode = "default" | "simple";
+type SafariMode = 'default' | 'simple';
 
 export interface DeviceProps extends SVGProps<SVGSVGElement> {
   mobile: {

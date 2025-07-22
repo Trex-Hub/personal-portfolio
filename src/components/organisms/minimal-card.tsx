@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   MinimalCard as MinimalCardMolecule,
   MinimalCardImage,
@@ -6,9 +6,9 @@ import {
   MinimalCardDescription,
   MinimalCardContent,
   MinimalCardFooter,
-} from "@/components/molecules/minimal-card";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+} from '@/components/molecules/minimal-card';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 interface MinimalCardOrganismProps {
   // Main card props
@@ -62,18 +62,16 @@ const MinimalCard = React.forwardRef<HTMLDivElement, MinimalCardOrganismProps>(
     ref
   ) => {
     return (
-      <Link 
-        href={href ?? "#"}
-        className="no-underline text-inherit hover:no-underline focus:no-underline active:no-underline visited:no-underline"
-      >
+      <Link
+        href={href ?? '#'}
+        className='no-underline text-inherit hover:no-underline focus:no-underline active:no-underline visited:no-underline'>
         <MinimalCardMolecule
           ref={ref}
-          className={cn("m-2 w-[28.75rem] not-prose", className)}
-          {...props}
-        >
+          className={cn('m-2 w-[28.75rem] not-prose', className)}
+          {...props}>
           {src && alt && (
             <MinimalCardImage
-              className={cn("h-[20rem]", imageClassName)}
+              className={cn('h-[20rem]', imageClassName)}
               src={src}
               alt={alt}
               priority={priority ?? true}
@@ -109,7 +107,7 @@ const MinimalCard = React.forwardRef<HTMLDivElement, MinimalCardOrganismProps>(
   }
 );
 
-MinimalCard.displayName = "MinimalCard";
+MinimalCard.displayName = 'MinimalCard';
 
 export default MinimalCard;
 export type { MinimalCardOrganismProps };
