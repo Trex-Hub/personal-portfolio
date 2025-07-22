@@ -10,6 +10,7 @@ import { Iphone15Pro } from '@/components/molecules/iphone';
 import ProjectCard from '@/components/molecules/project-card';
 import Timeline from '@/components/molecules/timeline';
 import MinimalCard from '@/components/organisms/minimal-card';
+import { Timeline as CareerTimeline } from '@/components/organisms/timeline/timeline';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
@@ -23,5 +24,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ProjectCard: props => <ProjectCard {...(props as any)} />,
     Timeline: props => <Timeline {...(props as any)} />,
     MinimalCard: props => <MinimalCard {...(props as any)} />,
+    CareerTimeline: props => <CareerTimeline {...(props as any)} />,
   };
 }
