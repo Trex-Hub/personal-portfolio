@@ -11,6 +11,7 @@ import ProjectCard from '@/components/molecules/project-card';
 import Timeline from '@/components/molecules/timeline';
 import MinimalCard from '@/components/organisms/minimal-card';
 import { Timeline as CareerTimeline } from '@/components/organisms/timeline/timeline';
+import ContactForm from '@/components/organisms/contact';
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
@@ -25,5 +26,6 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     Timeline: props => <Timeline {...(props as any)} />,
     MinimalCard: props => <MinimalCard {...(props as any)} />,
     CareerTimeline: props => <CareerTimeline {...(props as any)} />,
+    ContactForm: props => <ContactForm {...(props as any)} />,
   };
 }
