@@ -2,7 +2,6 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { z } from 'zod';
 import { Button } from '@/components/atoms/button';
 import {
   Form,
@@ -20,7 +19,7 @@ import { sendContactForm } from '@/services/api';
 import { toast } from 'sonner';
 
 export default function ContactForm() {
-  const form = useForm<z.infer<typeof ContactFormSchema>>({
+  const form = useForm<ContactFormSchemaType>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       name: '',

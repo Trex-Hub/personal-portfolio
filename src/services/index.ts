@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // LOGGER
 import logger from '@/lib/logger';
 

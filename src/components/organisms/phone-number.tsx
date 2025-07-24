@@ -119,7 +119,7 @@ const CountrySelect = ({
   const getCountryCode = (country: RPNInput.Country | undefined) => {
     try {
       return country ? `+${RPNInput.getCountryCallingCode(country)}` : '';
-    } catch (error) {
+    } catch {
       return '';
     }
   };
