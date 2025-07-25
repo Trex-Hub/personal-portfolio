@@ -13,6 +13,10 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang='en' className={inter.className} suppressHydrationWarning>
       <head>
         <link rel='icon' href='/icon.png' />
+        <meta
+          name='google-site-verification'
+          content='UsIBaViMNdwppQ3vvJ2JFeT79dD6JDouMkNtWI8fbDQ'
+        />
       </head>
       <body className='flex flex-col min-h-screen'>
         <RootProvider>{children}</RootProvider>
