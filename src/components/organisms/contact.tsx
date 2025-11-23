@@ -143,9 +143,9 @@ export default function ContactForm() {
         <p className='text-sm text-muted-foreground'>
           You can also reach me directly at{' '}
           <a
-            href='mailto:me@dev8s.dev'
+            href='mailto:me@dev8s.io'
             className='text-foreground hover:underline font-medium'>
-            me@dev8s.dev
+            me@dev8s.io
           </a>
         </p>
       </div>

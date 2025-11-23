@@ -1,5 +1,5 @@
 export const BASE_URL =
-  process.env.NEXT_PUBLIC_BASE_URL || 'https://dev8s.vercel.app';
+  process.env.NEXT_PUBLIC_BASE_URL || 'https://dev8s.io';
 
 export const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
